@@ -1,0 +1,39 @@
+# configuration specific to chunking
+chunk:
+  chunk_size: 7500
+  chunk_overlap: 100
+
+
+# configuration specific to paths vector dbs
+vector_db:
+  # db_name: ['Chroma DB','Qdrant','Weaviate']
+  db_name: ['Chroma DB','Qdrant']
+
+
+# configuration specific to paths
+path:
+  chroma_db_persist_directory: data, vectors
+  
+
+# configuration specific to AI models
+model:
+  # embedding_model: ['nomic-embed-text:latest','mxbai-embed-large','bge-m3']
+  embedding_model: ['nomic-embed-text:latest']
+  # llm_model:  ['deepseek-r1:1.5b','llama3.3','mistral']
+  llm_model:  ['deepseek-r1:1.5b']
+
+
+# Logging configuration
+logging:
+  version: 1
+  formatters:
+    llm:
+      format: "RAG LLM - %(asctime)s - %(levelname)s - %(message)s"
+  handlers:
+    console:
+      class: logging.StreamHandler
+      formatter: llm
+      level: DEBUG
+  root:
+    level: DEBUG
+    handlers: [ console ]

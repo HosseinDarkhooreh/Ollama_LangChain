@@ -1,0 +1,12 @@
+ollama
+streamlit
+pdfplumber
+langchain
+langchain-core
+langchain-ollama
+langchain_community
+langchain_text_splitters
+onnx
+chromadb
+Pillow
+numpy
