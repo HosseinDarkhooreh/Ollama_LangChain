@@ -7,8 +7,8 @@
 1. **Install Ollama**
    - Visit [Ollama's website](https://ollama.com) to download and install
    - Pull required models (LLM and Embedding):
-     e.g. ollama pull llama3.2      # for LLM Model
-     ollama pull nomic-embed-text   # for Embedding Model
+     - e.g. ollama pull llama3.2      # for LLM Model
+     - ollama pull nomic-embed-text   # for Embedding Model
      ```
 
 2. **Set Up Virtual Environment**
